@@ -1,0 +1,94 @@
+.menu {
+  padding-left: 10%;
+
+  padding-top: 3%;
+  padding-left: 2%;
+  padding-bottom: 3%;
+
+  margin-top: 10%;
+  background-color: black;
+
+  font-family: sans-serif,Helvetica;
+}
+
+.item {
+  transition: 0.5s ease;
+
+  font-size: 8em;
+  overflow: hidden;
+
+  text-decoration: none;
+  color: white;
+
+  /*Spacing between nav list, margin doesn't increase width of underlines*/
+  margin: -left: 2%;
+  margin-right: 2%;
+
+  padding-bottom: 10px;
+  border-bottom: 0px solid black;
+}
+
+.item:hover {
+  font-size: 7em;
+  cursor: pointer;
+  padding-bottom: 0px;
+  border-bottom: 3px solid white;
+}
+
+.item:active{
+  font-size: 8em;
+  border-bottom: 3px solid black;
+}
+
+/*  Responsive Navbar */
+.menu a.icon {
+  /* Give it the same CSS properties as any other item in the nav bar*/
+
+  display: none;
+}
+
+@media screen and (max-width: 2500px) {
+
+  .menu a.collapse {
+    display: none;
+  }
+
+  .menu a.icon {
+    font-size: 6em;
+    overflow: hidden;
+
+    text-decoration: none;
+    color: white;
+
+    /*Spacing between nav list, margin doesn't increase width of underlines*/
+    margin: -left: 2%;
+    margin-right: 2%;
+
+    padding-bottom: 10px;
+
+    display: inline-block;
+
+    margin-bottom: 5px;
+    margin-left: 30px;
+
+
+
+    float: right;
+    text-decoration: none;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 2500px) {
+  .menu.responsive {position: relative;}
+  .menu.responsive .icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  .menu.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
